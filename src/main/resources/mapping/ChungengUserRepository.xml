@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xinyuchao.repository.ChungengUserRepository">
+
+    <select id="findAll" resultType="ChengengUser">
+        select * from chungeng_user
+        <where>
+            <if test="id != null and id != ''">
+                and id = #{id}
+            </if>
+            <if test="username != null and username != ''">
+                and username like concat('%',#{username},'%')
+            </if>
+            <if test="chinesename != null and chinesename != ''">
+                and chinesename like concat('%',#{chinesename},'%')
+            </if>
+        </where>
+    </select>
+
+    <select id="findById" parameterType="java.lang.String" resultType="ChengengUser">
+        select * from chungeng_user where id = #{id}
+    </select>
+
+    <insert id="save" parameterType="ChengengUser">
+        insert into chungeng_user(id,username,chinesename,path,level,status,creatdate)
+        values(#{id},#{username},#{chinesename},#{path},#{level},#{status},#{creatdate})
+    </insert>
+
+    <update id="update" parameterType="ChengengUser">
+        update chungeng_user set username = #{username},chinesename = #{chinesename},path = #{path},
+        level = #{level},status = #{status},creatdate = #{creatdate} where id = #{id}
+    </update>
+
+    <delete id="deleteById" parameterType="java.lang.String">
+        delete from chungeng_user where id = #{id}
+    </delete>
+
+</mapper>

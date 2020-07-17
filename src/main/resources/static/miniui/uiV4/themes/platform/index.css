@@ -1,0 +1,37 @@
+.box {
+	height: 100%;
+	width: 100%;
+}
+
+.tasks {
+	width: auto;
+	height: 38px;
+	background-image:url("img/cnqc_titlebar.png");
+	margin-top: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	border-color: #adc5dd;
+	border-width: 1px;
+	border-style: solid;
+}
+.tasks-text{
+	font-family: "microsoft yahei","Î¢ÈíÑÅºÚ",simsun;
+	line-height: 38px;
+	float: left;
+	display: block;
+	color: #035cca;
+	margin-left: 10px;
+}
+.tasks-href,a{
+	text-decoration: none;
+	float: right;
+	line-height: 38px;
+	display: block;
+	color: #999999;
+	margin-right: 10px;
+	font-size: 12px;
+/* 	background-image:url("img/cnqc_rout_arrow.png");  */
+}
+a:hover{
+color: red;
+}

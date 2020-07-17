@@ -1,0 +1,21 @@
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/     #模版路径
+    suffix: .html                     #模版后缀
+    servlet:
+      content-type: text/html         #设置Content-type
+    encoding: UTF-8                   #编码方式
+    mode: HTML5                       #校验HTML5格式
+    cache: false                      #关闭缓存，在开发过程中可立即看到页面修改结果
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis:
+  mapper-locations: classpath:/mapping/*.xml
+  type-aliases-package: com.xinyuchao.entity
+mvc:
+  hiddenmethod:
+    filter:
+      enabled: true

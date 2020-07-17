@@ -1,0 +1,147 @@
+﻿.mypager
+{
+    cursor: default;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    height:35px;
+    vertical-align:middle;
+
+}
+.mypager-buttons
+{
+    position:relative;
+    top:5px;
+    width:100%;
+    float:left;
+    overflow:hidden;
+ }
+.mypager-pagerinfo
+{
+    position: relative;
+    top: 5px;
+}
+.mypager-pagerchange
+{
+    position: relative;
+    top: 7px;
+    
+}
+.mypager-button
+{
+    width: 24px;
+    height:24px;
+    background: #ffffff;
+    display: inline-block;
+    text-align: center;
+    border-radius: 0px;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid #8da2b4;
+    margin-left:10px;
+    line-height:24px;    
+}
+.mypager-button:hover
+{
+    border: 1px solid #8da2b4;
+}
+.mypager-current
+{
+    background-color: #fc5a4b;
+    color: #ffffff;
+    border-color:#fc5a4b;
+}
+.mypager-button-ellipsis
+{
+    cursor: default;
+}
+.mypager-prev, .mypager-next,.mypager-last,.mypager-first
+{
+    display: inline-block;
+    height: 24px;
+    line-height: 28px;
+    position: relative;
+    top: 0px;
+    cursor: pointer;
+}
+.mypager-prev
+{
+    background: url("images/prev.png") no-repeat 50% 5px;
+}
+.mypager-next
+{
+    background: url("images/next.png") no-repeat 50% 4px;
+}
+.mypager-last
+{
+    background: url("images/last.png") no-repeat 50% 4px;
+    }
+.mypager-first
+{
+    background: url("images/first.png") no-repeat 50% 4px;
+}
+.disabled
+{
+    opacity: 0.5;
+    -moz-opacity: 0.5;
+    filter: alpha(opacity=50);
+    cursor: default;
+}
+.disabled:hover
+{
+    border: 1px solid #8da2b4;
+}
+.mypager-number-wrap
+{
+
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height:24px;
+  }
+.mypager-number
+{
+    width: 30px;
+    height: 22px;
+    border: solid 1px #8da2b4;
+    position:relative;
+    margin-left:10px;
+    line-height:24px;
+}
+.mypager .mini-buttonedit
+{
+    height: 24px;
+    margin-left:10px;
+    margin-top:4px;
+}
+.mypager .mini-buttonedit-border
+{
+    height: 22px;
+}
+.mypager .mini-buttonedit-input
+{
+    line-height: 22px;
+}
+.mypager-count
+{
+    display:inline-block;
+     float:right;
+    position:relative;
+    right:5px;
+    top:-25px;
+    color:#828181;
+    font-size:14px;
+ }
+ .mypegr-info-text
+ {
+     position:relative;
+     top:5px;
+ }
+.mypager-action
+{
+    position:relative;
+    padding:auto 10px;
+    width: 34px;
+    height:24px;
+    line-height:24px;
+   }
